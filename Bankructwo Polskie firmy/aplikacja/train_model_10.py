@@ -44,7 +44,7 @@ from custom_transformers import QuantileClipper
 
 warnings.filterwarnings("ignore")
 RS = 42
-ARFF = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent / "5year.arff"
+ARFF = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("5year.arff")
 OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("model_10.joblib")
 
 # 10 wskaźników z aplikacji (kolejność jak w app.py)
